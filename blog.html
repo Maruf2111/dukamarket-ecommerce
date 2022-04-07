@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>blog page</title>
+
+    <style>
+
+.blogpage-section{
+    background-color: #F3F5F6;
+    padding: 50px 0;
+}
+.blogpage-banner{
+    background-image: url(img/shop-banner.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* margin-top: 50px; */
+    padding: 200px 0;
+}
+.blogpage-banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.blogpage-banner-content::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    background-color: #263C97;
+    opacity: .7;
+}
+.blogpage-banner-content h2{
+    font-size: 40px;
+    color: #ffff;
+    text-transform: capitalize;
+}
+.blogpage-item {
+    margin-top: 30px;
+    background: #ffff;
+    border-radius: 20px;
+}
+.blogpage-image {
+    overflow: hidden;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.blogpage-image img {
+    width: 100%;
+    transition: .3s;
+    transform: scale(1);
+}
+.blogpage-item:hover img {
+    transform: scale(1.2) rotate(-6deg);
+}
+.blogpage-image h3 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 10px;
+    background: #16BCDC;
+    border-radius: 10px;
+}
+.blogpage-content {
+    padding: 30px;
+}
+.blogpage-content h2 {
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.blogpage-content p {
+    font-size: 16px;
+    color: #838383;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.blogpage-content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #d7d7d7;
+}
+button.blogpage-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: gray;
+    text-transform: capitalize;
+    font-weight: 300;
+    transition: .3s;
+}
+button.blogpage-btn:hover {
+    color: #16BCDC;
+}
+.blogpage-content-footer p {
+    margin: 0;
+}
+.blogpage-pagination ul li{
+    margin: 0 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+<!-- side-navbar starts-->
+
+<div class="said-nav">
+    <h2 id="said-close-btn">close <i class="fa fa-times"></i></h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</div>
+
+<!-- side-navbar ends-->
+
+<!-- car section starts -->
+
+<div class="cart-section">
+    <div class="cart-header">
+        <h1>cart</h1>
+        <i class="fa fa-times" id="cart-cross"></i>
+    </div>
+</div>
+
+<!-- car section ends -->
+
+<!-- header section starts -->
+
+<div class="header-section">
+<div class="header-top">
+    <div class="header-top-left">
+        <select name="" id="language">
+            <option value="bangla">bangla</option>
+            <option value="english">english</option>
+            <option value="arobic">arobic</option>
+        </select>
+        <select name="" id="currency">
+            <option value="dollar">dollar</option>
+            <option value="rial">rial</option>
+            <option value="euro">euro</option>
+            <option value="dinner">dinner</option>
+        </select>
+        <p>need help : <a href="#">+001 123 456 789</a></p>
+    </div>
+
+    <div class="header-top-right">
+        <a href="account.html">my account</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+
+<div class="header-main">
+    <i class="fa fa-bars" id="header-main-bar"></i>
+    <div class="header-logo">
+        <a href="index.html"><img src="img/logo.webp"></a>
+    </div>
+    <div class="header-search">
+        <select name="" id="all-categories">
+            <option value="all-categories">all-categories</option>
+            <option value="to-deal">to-deal</option>
+            <option value="top-featured-product">top-featured-product</option>
+            <option value="top-selling-product">top-selling-product</option>
+            <option value="computer-desktop">computer-desktop</option>
+        </select>
+        <input type="search" placeholder="search-here..">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header-cart">
+        <i class="fa fa-search" id="searchbarIcon"></i>
+        <div class="header-cart-item">
+            <i class="far fa-user"></i>
+            <p>sing in <a href="account.html">creat an account</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="far fa-heart"></i>
+            <p>favorit <a href="#">my wish list</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="fas fa-cart-arrow-down" id="cart-icon"></i>
+            <!-- <span class="cart-count">0</span> -->
+            <p>my cart <a href="#">$0.00</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="header-bottom-categories">
+        <i class="fa fa-bars"></i>
+        <p>SHOP BY DEPARTMENT</p>
+    </div>
+    <div class="header-bottom-menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="header-bottom-text">
+        <p>Spend $120 more and get free shipping!</p>
+    </div>
+</div>
+</div>
+
+<!-- header section ends -->
+
+<!-- shoppage banner starts -->
+
+<div class="blogpage-banner">
+<div class="blogpage-banner-content">
+    <h2>blog</h2>
+</div>
+</div>
+
+<!-- shoppage banner starts -->
+
+<!-- blog page starts -->
+
+<div class="blogpage-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-1.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-2.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-3.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-4.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-5.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="blogpage-item">
+                    <div class="blogpage-image">
+                        <img src="img/blog-6.webp">
+                        <h3>photography</h3>
+                    </div>
+                    <div class="blogpage-content">
+                        <h2>Special Limited Edition & Silver Summicron</h2>
+                        <p>The last of a series of dinner chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back</p>
+                        <div class="blogpage-content-footer">
+                            <button class="blogpage-btn">read more</button>
+                            <p>Posted: August 07, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogpage-pagination my-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- blog page ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-section">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-truck"></i>
+                    <p>FREE DELIVERY <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-newspaper"></i>
+                    <p>safe payment <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="far fa-envelope"></i>
+                    <p>messages <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>return money <span>For all orders over $120</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>download app</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur fugit necessitatibus temp.</p>
+                    <div class="footer-main-item-image">
+                        <img src="img/appstore.webp">
+                        <img src="img/playstore.webp">
+                    </div>
+                    <div class="footer-main-item-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>Help & Customer Care</h4>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">How to use My Account</a>
+                    <a href="#">Placing an Order</a>
+                    <a href="#">New Customers</a>
+                    <a href="#">Payment Methods</a>
+                </div>
+            </div>
+                <div class="col-lg-2 co-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>Customer Service</h4>
+                        <a href="#">Online Returns Policy</a>
+                        <a href="#">Policies & Rules</a>
+                        <a href="#">Submit a Dispute</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Customer Service</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>My Account</h4>
+                        <a href="#">Custom Link</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Product Support</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="footer-main-item">
+                        <h4>Sign Up To Newsletter</h4>
+                        <p>Join 60.000+ subscribers and get a new discount coupon
+                            on every Saturday.</p>
+                        <p>By providing your email address, you agree to our
+                            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ADVANCED SEARCH</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <img src="img/payment.webp">
+        <p>Copyright © Maruf Ahmed. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <!-- js file -->
+    <script src="assests/jquery-3.6.0.min.js"></script>
+    <script src="assests/owl.carousel.min.js"></script>
+    <script src="assests/bootstrap.min.js"></script>
+    <script src="min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>blog page</title>
+
+    <style>
+
+        /* loginpage */
+
+.login-page {
+    padding: 50px 0;
+}
+.loginpage-header {
+    text-align: center;
+}
+.loginpage-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.loginpage-main-item {
+    margin-top: 40px;
+}
+.loginpage-main-item h2 {
+    font-size: 25px;
+    color: #525050;
+}
+.loginpage-main-item p {
+    font-size: 14px;
+    color: #5a5a5a;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.loginpage-main-item input {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    height: 50px;
+    margin: 5px 0;
+    outline: none;
+    padding: 10px;
+}
+.loginpage-main-item input[type ="submit"]{
+    background-color: #16BCDC;
+    color: #ffff;
+    text-transform: capitalize;
+    transition: .3s;
+    padding: 0;
+}
+.loginpage-main-item input[type ="submit"]:hover{
+    background-color: #077c94;
+}
+.loginpage-main-item a {
+    color: gray;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s;
+    padding: 15px 0;
+    display: block;
+}
+.loginpage-main-item a:hover {
+    color: #16BCDC;
+}
+.loginpage-main-item label {
+    font-size: 16px;
+    color: #787676;
+    padding: 5px 0;
+}
+.creataccount-btn{
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    height: 50px;
+    margin: 5px 0;
+    background-color: #16BCDC;
+    color: #ffff;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.creataccount-btn:hover{
+    background-color: #077c94;
+}
+
+      /* singuppage */
+
+.singup-page {
+    padding: 80px 0;
+    display: none;
+}
+.singuppage-header {
+    text-align: center;
+}
+.singuppage-header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.singuppage-main-item {
+    margin-top: 40px;
+}
+.singuppage-main-item h2 {
+    font-size: 25px;
+    color: #525050;
+}
+.singuppage-main-item input {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    height: 50px;
+    margin: 5px 0;
+    outline: none;
+    padding: 10px;
+}
+.singuppage-main-item input[type ="submit"]{
+    background-color: #16BCDC;
+    color: #ffff;
+    text-transform: capitalize;
+    transition: .3s;
+    padding: 0;
+    margin-top: 40px;
+}
+.singuppage-main-item input[type ="submit"]:hover{
+    background-color: #077c94;
+}
+.singuppage-main-item label {
+    font-size: 16px;
+    color: #787676;
+    padding: 5px 0;
+    margin-top: 15px;
+}
+
+    </style>
+
+</head>
+<body>
+    
+<!-- side-navbar starts-->
+
+<div class="said-nav">
+    <h2 id="said-close-btn">close <i class="fa fa-times"></i></h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</div>
+
+<!-- side-navbar ends-->
+
+<!-- car section starts -->
+
+<div class="cart-section">
+    <div class="cart-header">
+        <h1>cart</h1>
+        <i class="fa fa-times" id="cart-cross"></i>
+    </div>
+</div>
+
+<!-- car section ends -->
+
+<!-- header section starts -->
+
+<div class="header-section">
+<div class="header-top">
+    <div class="header-top-left">
+        <select name="" id="language">
+            <option value="bangla">bangla</option>
+            <option value="english">english</option>
+            <option value="arobic">arobic</option>
+        </select>
+        <select name="" id="currency">
+            <option value="dollar">dollar</option>
+            <option value="rial">rial</option>
+            <option value="euro">euro</option>
+            <option value="dinner">dinner</option>
+        </select>
+        <p>need help : <a href="#">+001 123 456 789</a></p>
+    </div>
+
+    <div class="header-top-right">
+        <a href="account.html">my account</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+
+<div class="header-main">
+    <i class="fa fa-bars" id="header-main-bar"></i>
+    <div class="header-logo">
+        <a href="index.html"><img src="img/logo.webp"></a>
+    </div>
+    <div class="header-search">
+        <select name="" id="all-categories">
+            <option value="all-categories">all-categories</option>
+            <option value="to-deal">to-deal</option>
+            <option value="top-featured-product">top-featured-product</option>
+            <option value="top-selling-product">top-selling-product</option>
+            <option value="computer-desktop">computer-desktop</option>
+        </select>
+        <input type="search" placeholder="search-here..">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header-cart">
+        <i class="fa fa-search" id="searchbarIcon"></i>
+        <div class="header-cart-item">
+            <i class="far fa-user"></i>
+            <p>sing in <a href="account.html">creat an account</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="far fa-heart"></i>
+            <p>favorit <a href="#">my wish list</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="fas fa-cart-arrow-down" id="cart-icon"></i>
+            <!-- <span class="cart-count">0</span> -->
+            <p>my cart <a href="#">$0.00</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="header-bottom-categories">
+        <i class="fa fa-bars"></i>
+        <p>SHOP BY DEPARTMENT</p>
+    </div>
+    <div class="header-bottom-menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="header-bottom-text">
+        <p>Spend $120 more and get free shipping!</p>
+    </div>
+</div>
+</div>
+
+<!-- header section ends -->
+
+<!-- account page starts -->
+
+<div class="login-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="loginpage-header">
+                    <h1>Customer Login</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="loginpage-main">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="loginpage-main-item">
+                        <h2>Registered Customers</h2>
+                        <p>If you have an account, sign in with your email address.</p>
+
+                        <form action="">
+                            <label for="email">Email *</label> <br>
+                            <input type="email" id="email"> <br>
+                            <label for="pass">Password *</label> <br>
+                            <input type="Password" id="pass"> <br>
+                            <a href="#">Forgot Your Password?</a> <br>
+                            <input type="submit" value="sing in">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="loginpage-main-item">
+                        <h2>New Customers</h2>
+                        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
+
+                        <button class="creataccount-btn">create an account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="singup-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="singuppage-header">
+                    <h1>Create New Customer Account</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="singuppage-main">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="singuppage-main-item">
+                        <h2>Sign-in Information</h2>
+    
+                        <form action="">
+                            <label for="name">Your Name *</label> <br>
+                            <input type="text" id="name"> <br>
+                            <label for="email">Email *</label> <br>
+                            <input type="email" id="email"> <br>
+                            <label for="pass">Password *</label> <br>
+                            <input type="Password" id="pass"> <br>
+                            <input type="submit" value="create an account">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- account page ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-section">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-truck"></i>
+                    <p>FREE DELIVERY <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-newspaper"></i>
+                    <p>safe payment <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="far fa-envelope"></i>
+                    <p>messages <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>return money <span>For all orders over $120</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>download app</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur fugit necessitatibus temp.</p>
+                    <div class="footer-main-item-image">
+                        <img src="img/appstore.webp">
+                        <img src="img/playstore.webp">
+                    </div>
+                    <div class="footer-main-item-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>Help & Customer Care</h4>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">How to use My Account</a>
+                    <a href="#">Placing an Order</a>
+                    <a href="#">New Customers</a>
+                    <a href="#">Payment Methods</a>
+                </div>
+            </div>
+                <div class="col-lg-2 co-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>Customer Service</h4>
+                        <a href="#">Online Returns Policy</a>
+                        <a href="#">Policies & Rules</a>
+                        <a href="#">Submit a Dispute</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Customer Service</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>My Account</h4>
+                        <a href="#">Custom Link</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Product Support</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="footer-main-item">
+                        <h4>Sign Up To Newsletter</h4>
+                        <p>Join 60.000+ subscribers and get a new discount coupon
+                            on every Saturday.</p>
+                        <p>By providing your email address, you agree to our
+                            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ADVANCED SEARCH</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <img src="img/payment.webp">
+        <p>Copyright © Maruf Ahmed. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <!-- js file -->
+    <script src="assests/jquery-3.6.0.min.js"></script>
+    <script src="assests/owl.carousel.min.js"></script>
+    <script src="assests/bootstrap.min.js"></script>
+    <script src="min.js"></script>
+
+    <script>
+
+        // login page
+
+let createBtn = document.querySelector(".creataccount-btn");
+let loginPage = document.querySelector(".login-page");
+let singupPage = document.querySelector(".singup-page");
+
+createBtn.onclick = () =>{
+    loginPage.style.display = "none";
+    singupPage.style.display = "block";
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>blog page</title>
+
+    <style>
+
+ /* sproduct section */
+
+.sproduct-section {
+    background: #F6F5FB;
+    padding: 100px 0;
+}
+.sproduct-section .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.sproduct-image img {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+}
+.sproduct-image {
+    position: relative;
+    border-radius: 20px;
+    padding: 40px;
+}
+i#sproduct-search {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2d7b99;
+}
+.sproduct-content {
+    padding: 20px;
+}
+.sproduct-content h1 {
+    font-size: 40px;
+    color: #30353D;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.sproduct-content .price {
+    color: #7EA96C;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.sproduct-content p {
+    color: #66698d;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.sproduct-content input[type="number"] {
+    width: 50px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid #504a4a;
+    border-radius: 10px;
+    text-align: center;
+}
+button.sproduct-btn {
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    box-shadow: 0 10px 10px #FFCFBC;
+    background: #FF7542;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    opacity: .9;
+    transition: .3s;
+}
+button.sproduct-btn:hover {
+    box-shadow: none;
+    opacity: 1;
+}
+.sproduct-category {
+    margin-top: 70px;
+}
+.sproduct-category p {
+    padding: 15px 0;
+    border-bottom: 1px solid #dfd9d9;
+    border-top: 1px solid #dfd9d9;
+    margin: 0;
+}
+.sproduct-category p a {
+    color: gray;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    transition: .3s;
+}
+.sproduct-category p a:hover {
+    color: #ff8355;
+}
+.sproduct-review-header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfd9d9;
+}
+.sproduct-review {
+    padding-top: 100px;
+}
+.sproduct-review-header button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: gray;
+}
+.sproduct-describe h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.sproduct-describe p {
+    font-size: 16px;
+    color: #817c7c;
+    margin-top: 50px;
+}
+.sproduct-describe {
+    padding: 50px;
+}
+.sproduct-review-2 {
+    padding: 50px;
+    display: none;
+}
+.sproduct-review-header-2 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.sproduct-review-header-2 p {
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dfd9d9;
+}
+.sproduct-review-2 h2 {
+    padding-top: 20px;
+}
+.sproduct-review-2 p {
+    color: gray;
+    padding-top: 10px;
+}
+.sproduct-rating p {
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+.sproduct-rating i {
+    color: gray;
+    font-size: 14px;
+}
+.sproduct-review-2 form label {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.sproduct-review-2 form {
+    padding-top: 50px;
+}
+.sproduct-review-2 form input, textarea {
+    width: 100%;
+    border: 1px solid #dfd9d9;
+    outline: none;
+    padding: 10px;
+}
+.sproduct-review-2 form input:focus, textarea:focus {
+    border: 1px solid #e79025;
+}
+input#check {
+    width: 17px;
+    margin-top: 30px;
+}
+.sproduct-review-2 input[type="submit"] {
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    background: #FF7542;
+    box-shadow: 0 10px 10px #FFD5C5;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    opacity: .8;
+    margin-top: 20px;
+    transition: .3s;
+}
+.sproduct-review-2 input[type="submit"]:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+/* related product */
+
+.related-image img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.related-item {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #e6e8ed;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.related-image {
+    position: relative;
+    padding: 30px;
+}
+span.sale {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 14px;
+    background: #00A3FF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+span.delete-price {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    color: #ffff;
+    font-size: 14px;
+    background: #E5423F;
+    border-radius: 20px;
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s;
+}
+span.delete-price:hover {
+    opacity: 1;
+}
+.related-content h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #30353D;
+}
+p.related-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8AB07B;
+}
+button.related-btn {
+    padding: 8px 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #FF7542;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px #FBDCD3;
+    opacity: .8;
+    transition: .3s;
+}
+button.related-btn:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+.related-content {
+    padding: 30px;
+    transition: .3s;
+}
+.related-content:hover {
+    background: #F8FAFF;
+}
+
+    </style>
+
+</head>
+<body>
+    
+<!-- side-navbar starts-->
+
+<div class="said-nav">
+    <h2 id="said-close-btn">close <i class="fa fa-times"></i></h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</div>
+
+<!-- side-navbar ends-->
+
+<!-- car section starts -->
+
+<div class="cart-section">
+    <div class="cart-header">
+        <h1>cart</h1>
+        <i class="fa fa-times" id="cart-cross"></i>
+    </div>
+</div>
+
+<!-- car section ends -->
+
+<!-- header section starts -->
+
+<div class="header-section">
+<div class="header-top">
+    <div class="header-top-left">
+        <select name="" id="language">
+            <option value="bangla">bangla</option>
+            <option value="english">english</option>
+            <option value="arobic">arobic</option>
+        </select>
+        <select name="" id="currency">
+            <option value="dollar">dollar</option>
+            <option value="rial">rial</option>
+            <option value="euro">euro</option>
+            <option value="dinner">dinner</option>
+        </select>
+        <p>need help : <a href="#">+001 123 456 789</a></p>
+    </div>
+
+    <div class="header-top-right">
+        <a href="account.html">my account</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+
+<div class="header-main">
+    <i class="fa fa-bars" id="header-main-bar"></i>
+    <div class="header-logo">
+        <a href="index.html"><img src="img/logo.webp"></a>
+    </div>
+    <div class="header-search">
+        <select name="" id="all-categories">
+            <option value="all-categories">all-categories</option>
+            <option value="to-deal">to-deal</option>
+            <option value="top-featured-product">top-featured-product</option>
+            <option value="top-selling-product">top-selling-product</option>
+            <option value="computer-desktop">computer-desktop</option>
+        </select>
+        <input type="search" placeholder="search-here..">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header-cart">
+        <i class="fa fa-search" id="searchbarIcon"></i>
+        <div class="header-cart-item">
+            <i class="far fa-user"></i>
+            <p>sing in <a href="account.html">creat an account</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="far fa-heart"></i>
+            <p>favorit <a href="#">my wish list</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="fas fa-cart-arrow-down" id="cart-icon"></i>
+            <!-- <span class="cart-count">0</span> -->
+            <p>my cart <a href="#">$0.00</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="header-bottom-categories">
+        <i class="fa fa-bars"></i>
+        <p>SHOP BY DEPARTMENT</p>
+    </div>
+    <div class="header-bottom-menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="header-bottom-text">
+        <p>Spend $120 more and get free shipping!</p>
+    </div>
+</div>
+</div>
+
+<!-- header section ends -->
+
+<!-- single product page starts -->
+
+<div class="sproduct-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="sproduct-image">
+                    <img src="img/hot-mobile-1.png" class="zoom">
+                    <!-- <i class="fa fa-search" id="sproduct-search"></i> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="sproduct-content">
+                    <h1>Mobile</h1>
+                    <h2 class="price">$15.00</h2>
+                    <p>This is a simple, virtual product.</p>
+                    <input type="number" value="1">
+                    <button class="sproduct-btn">add to cart</button>
+                    <div class="sproduct-category">
+                        <p>SKW: <a href="#">woo-album</a></p>
+                        <p>category: <a href="#">music</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sproduct-review">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sproduct-review-header">
+                        <button class="describe-btn">Description</button>
+                        <button class="review-btn">Reviews <span class="review-count">(0)</span></button>
+                    </div>
+                </div>
+
+                <div class="sproduct-describe">
+                    <div class="col-lg-12">
+                        <h2>Description</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis unde voluptatibus, quia modi sint enim quasi quibusdam sapiente ex, ea nemo ullam sit similique pariatur obcaecati. Asperiores aliquid aperiam quam saepe adipisci eveniet architecto laboriosam in quisquam velit aliquam numquam ullam aspernatur error illum, quaerat ad. Vel ipsam quidem, incidunt laudantium sequi placeat eum architecto ex pariatur sed dignissimos voluptatibus vero cupiditate nihil totam dolor tempore sint! Delectus nobis numquam temporibus enim nulla voluptatem id ratione, tenetur mollitia magni laborum, eos provident earum natus at velit unde adipisci recusandae et a voluptas. Eum possimus veniam ipsam ullam perferendis a et voluptatem! Fugit, ullam consequatur? Nihil delectus maiores, obcaecati velit minus ad ex laborum debitis hic architecto earum libero pariatur sint aliquam corrupti tempore ea eligendi adipisci quibusdam mollitia! Tempore totam vitae minima ex culpa dicta libero, suscipit sed architecto non, pariatur aspernatur dolorum necessitatibus eveniet animi nisi illo ad nesciunt enim aliquid fugit amet facere, cupiditate perspiciatis. Perspiciatis eveniet magnam ut modi quos nostrum numquam tempora illo voluptate, quasi dolores ullam facilis. Magnam quis ad assumenda consequatur modi ea reprehenderit neque iure ullam deserunt. Aspernatur voluptatibus placeat blanditiis facilis illo, id non iste quaerat minus ipsa veniam accusantium sapiente modi.</p>
+                    </div>
+                </div>
+
+                <div class="sproduct-review-2">
+                    <div class="col-lg-12">
+                        <div class="sproduct-review-header-2">
+                            <h2>Reviews</h2>
+                            <p>There are no reviews yet.</p>
+                        </div>
+                        <h2>Be the first to review “Album”</h2>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div class="sproduct-rating">
+                            <p><emp>Your rating</emp></p>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <form action="">
+                            <label for="review">Your review *</label> <br>
+                            <textarea name="" id="reviw" cols="30" rows="3"></textarea> <br>
+                            <label for="name">Name *</label> <br>
+                            <input type="text" id="name"> <br>
+                            <label for="email">Email *</label> <br>
+                            <input type="email" id="name"> <br>
+                            <input type="checkbox" id="check">
+                            <label for="check">Save my name, email, and website in this browser for the next time I comment.</label>
+                        </form>
+                        <input type="submit" value="submit">
+                    </div>
+                </div>
+
+
+                <div class="related-product">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="related-item" onclick="window.location.href='sproduct.html'">
+                                <div class="related-image">
+                                    <img src="img/hop-mobile-3.png">
+                                    <span class="sale">sale!</span>
+                                    <span class="delete-price"><del>$50.00</del></span>
+                                </div>
+                                <div class="related-content">
+                                    <h4>Mobile</h4>
+                                    <p class="related-price">$40.00</p>
+                                    <button class="related-btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="related-item" onclick="window.location.href='sproduct.html'">
+                                <div class="related-image">
+                                    <img src="img/hot-mobile-1.png">
+                                    <span class="sale">sale!</span>
+                                    <span class="delete-price"><del>$50.00</del></span>
+                                </div>
+                                <div class="related-content">
+                                    <h4>Mobile</h4>
+                                    <p class="related-price">$40.00</p>
+                                    <button class="related-btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="related-item" onclick="window.location.href='sproduct.html'">
+                                <div class="related-image">
+                                    <img src="img/hot-mobile-2.png">
+                                    <span class="sale">sale!</span>
+                                    <span class="delete-price"><del>$50.00</del></span>
+                                </div>
+                                <div class="related-content">
+                                    <h4>Mobile</h4>
+                                    <p class="related-price">$40.00</p>
+                                    <button class="related-btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="related-item" onclick="window.location.href='sproduct.html'">
+                                <div class="related-image">
+                                    <img src="img/hop-headphone-2.png">
+                                    <span class="sale">sale!</span>
+                                    <span class="delete-price"><del>$50.00</del></span>
+                                </div>
+                                <div class="related-content">
+                                    <h4>Headphone</h4>
+                                    <p class="related-price">$40.00</p>
+                                    <button class="related-btn">add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- single product page ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-section">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-truck"></i>
+                    <p>FREE DELIVERY <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-newspaper"></i>
+                    <p>safe payment <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="far fa-envelope"></i>
+                    <p>messages <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>return money <span>For all orders over $120</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>download app</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur fugit necessitatibus temp.</p>
+                    <div class="footer-main-item-image">
+                        <img src="img/appstore.webp">
+                        <img src="img/playstore.webp">
+                    </div>
+                    <div class="footer-main-item-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>Help & Customer Care</h4>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">How to use My Account</a>
+                    <a href="#">Placing an Order</a>
+                    <a href="#">New Customers</a>
+                    <a href="#">Payment Methods</a>
+                </div>
+            </div>
+                <div class="col-lg-2 co-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>Customer Service</h4>
+                        <a href="#">Online Returns Policy</a>
+                        <a href="#">Policies & Rules</a>
+                        <a href="#">Submit a Dispute</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Customer Service</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>My Account</h4>
+                        <a href="#">Custom Link</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Product Support</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="footer-main-item">
+                        <h4>Sign Up To Newsletter</h4>
+                        <p>Join 60.000+ subscribers and get a new discount coupon
+                            on every Saturday.</p>
+                        <p>By providing your email address, you agree to our
+                            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ADVANCED SEARCH</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <img src="img/payment.webp">
+        <p>Copyright © Maruf Ahmed. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <!-- js file -->
+    <script src="assests/jquery-3.6.0.min.js"></script>
+    <script src="assests/owl.carousel.min.js"></script>
+    <script src="assests/bootstrap.min.js"></script>
+    <script src="min.js"></script>
+
+    <script>
+
+        // single product
+
+let describeBtn = document.querySelector(".describe-btn");
+let reviewBtn = document.querySelector(".review-btn");
+let describe = document.querySelector(".sproduct-describe");
+let review = document.querySelector(".sproduct-review-2");
+
+
+describeBtn.onclick = () =>{
+    describe.style.display = "block";
+    review.style.display = "none";
+};
+
+reviewBtn.onclick = () =>{
+    describe.style.display = "none";
+    review.style.display = "block";
+};
+
+    </script>
+
+</body>
+</html>

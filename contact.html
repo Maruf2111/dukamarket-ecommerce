@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>contact page</title>
+
+    <style>
+
+.contactpage-section {
+    padding: 50px 0;
+}
+.contactpage-header {
+    text-align: center;
+}
+.contactpage-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.contactpage-header h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.contactpage-header h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.contactpage-header p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #66666B;
+    line-height: 28px;
+    padding: 15px 53px;
+}
+.contactpage-item {
+    margin-top: 30px;
+}
+.contactpage-item-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+.contactpage-item-content-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contactpage-item-content-header img {
+    max-width: 100%;
+}
+.contactpage-item-content-header h2 {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    margin: 0;
+    padding-left: 10px;
+}
+.contactpage-item-content-header h2 span {
+    font-size: 100%;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+.contactpage-item-content-header {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E3E3;
+}
+.contactpage-item-content p {
+    font-size: 15px;
+    color: gray;
+    margin: 0;
+    padding-top: 15px;
+}
+.contactpage-map {
+    margin-top: 50px;
+}
+.contactpage-map-item iframe {
+    width: 100%;
+}
+.contactpage-form {
+    padding-top: 30px;
+}
+.contactpage-form-item{
+    margin-top: 40px;
+}
+.contactpage-faq{
+    margin-top: 40px;
+}
+.contactpage-faq-header h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: gray;
+    font-weight: 300;
+}
+.contactpage-faq-header h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #444343;
+    padding-top: 15px;
+}
+.accordion-item h2 {
+    font-size: 16px;
+    color: #181717;
+    font-weight: 300;
+    padding: 10px;
+}
+.accordion-body {
+    font-size: 14px;
+    color: gray;
+    line-height: 25px;
+}
+.contactpage-faq-main {
+    margin-top: 20px;
+}
+.contactpage-form-header h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: gray;
+}
+.contactpage-form-header h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #3e3d3d;
+    padding-top: 15px;
+}
+.contactpage-form-main input, textarea {
+    width: 100%;
+    border: 1px solid #dddcdc;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    outline: none;
+}
+.contactpage-form-main input[type="submit"] {
+    width: 250px;
+    background: #14A8C5;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 30px;
+    outline: none;
+    transition: .3s;
+}
+.contactpage-form-main input[type="submit"]:hover {
+    background: #0fcff5;
+}
+.contactpage-form-main textarea {
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    
+<!-- side-navbar starts-->
+
+<div class="said-nav">
+    <h2 id="said-close-btn">close <i class="fa fa-times"></i></h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</div>
+
+<!-- side-navbar ends-->
+
+<!-- car section starts -->
+
+<div class="cart-section">
+    <div class="cart-header">
+        <h1>cart</h1>
+        <i class="fa fa-times" id="cart-cross"></i>
+    </div>
+</div>
+
+<!-- car section ends -->
+
+<!-- header section starts -->
+
+<div class="header-section">
+<div class="header-top">
+    <div class="header-top-left">
+        <select name="" id="language">
+            <option value="bangla">bangla</option>
+            <option value="english">english</option>
+            <option value="arobic">arobic</option>
+        </select>
+        <select name="" id="currency">
+            <option value="dollar">dollar</option>
+            <option value="rial">rial</option>
+            <option value="euro">euro</option>
+            <option value="dinner">dinner</option>
+        </select>
+        <p>need help : <a href="#">+001 123 456 789</a></p>
+    </div>
+
+    <div class="header-top-right">
+        <a href="account.html">my account</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+
+<div class="header-main">
+    <i class="fa fa-bars" id="header-main-bar"></i>
+    <div class="header-logo">
+        <a href="index.html"><img src="img/logo.webp"></a>
+    </div>
+    <div class="header-search">
+        <select name="" id="all-categories">
+            <option value="all-categories">all-categories</option>
+            <option value="to-deal">to-deal</option>
+            <option value="top-featured-product">top-featured-product</option>
+            <option value="top-selling-product">top-selling-product</option>
+            <option value="computer-desktop">computer-desktop</option>
+        </select>
+        <input type="search" placeholder="search-here..">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header-cart">
+        <i class="fa fa-search" id="searchbarIcon"></i>
+        <div class="header-cart-item">
+            <i class="far fa-user"></i>
+            <p>sing in <a href="account.html">creat an account</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="far fa-heart"></i>
+            <p>favorit <a href="#">my wish list</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="fas fa-cart-arrow-down" id="cart-icon"></i>
+            <!-- <span class="cart-count">0</span> -->
+            <p>my cart <a href="#">$0.00</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="header-bottom-categories">
+        <i class="fa fa-bars"></i>
+        <p>SHOP BY DEPARTMENT</p>
+    </div>
+    <div class="header-bottom-menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="header-bottom-text">
+        <p>Spend $120 more and get free shipping!</p>
+    </div>
+</div>
+</div>
+
+<!-- header section ends -->
+
+<!-- contact page starts -->
+
+<div class="contactpage-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contactpage-header">
+                    <h4>CONTACT US</h4>
+                    <h2>Hello, We are Dukamarket.</h2>
+                    <h1>Contact Us For Any Questions</h1>
+                    <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it.
+                        Sign up for an Exposure account, or post regularly to Tumblr, or both.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactpage-main">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="contactpage-item">
+                        <div class="contactpage-item-image">
+                            <img src="img/contact-1.jpg">
+                        </div>
+                        <div class="contactpage-item-content">
+                            <div class="contactpage-item-content-header">
+                                <img src="img/flag-1.png">
+                                <h2>Dukanmarket digital store <span>france</span></h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="contactpage-item">
+                        <div class="contactpage-item-image">
+                            <img src="img/contact-2.jpg">
+                        </div>
+                        <div class="contactpage-item-content">
+                            <div class="contactpage-item-content-header">
+                                <img src="img/flag-2.png">
+                                <h2>Dukanmarket digital store <span>france</span></h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="contactpage-item">
+                        <div class="contactpage-item-image">
+                            <img src="img/contact-3.jpg">
+                        </div>
+                        <div class="contactpage-item-content">
+                            <div class="contactpage-item-content-header">
+                                <img src="img/flag-3.png">
+                                <h2>Dukanmarket digital store <span>france</span></h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="contactpage-item">
+                        <div class="contactpage-item-image">
+                            <img src="img/contact-4.jpg">
+                        </div>
+                        <div class="contactpage-item-content">
+                            <div class="contactpage-item-content-header">
+                                <img src="img/flag-4.png">
+                                <h2>Dukanmarket digital store <span>france</span></h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="contactpage-map">
+    <div class="contactpage-map-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.4380636860124!2d90.37154131452122!3d24.74616515592434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f7e83cf30d7%3A0xaacb26ca167738b9!2sMymensingh%20City%20Bypass!5e0!3m2!1sen!2sbd!4v1649270798054!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<div class="contactpage-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="contactpage-faq">
+                    <div class="contactpage-faq-header">
+                        <h4>Information Questions</h4>
+                        <h1>Prequently asked questions</h1>
+                    </div>
+                    <div class="contactpage-faq-main">
+                        <div class="accordion">
+                             <div class="accordion-item">
+                                <h2 class="accordion-button collapsed" data-bs-target="#one-1" data-bs-toggle="collapse">Will I receive the same product that I see in the picture?</h2>
+                                <div id="one-1" class="accordion-collapse collapse" data-bs-parent=".accordion">
+                                    <div class="accordion-body">
+                                        Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-button collapsed" data-bs-target="#one-2" data-bs-toggle="collapse">Will I receive the same product that I see in the picture?</h2>
+                                <div id="one-2" class="accordion-collapse collapse" data-bs-parent=".accordion">
+                                    <div class="accordion-body">
+                                        Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-button collapsed" data-bs-target="#one-3" data-bs-toggle="collapse">Will I receive the same product that I see in the picture?</h2>
+                                <div id="one-3" class="accordion-collapse collapse" data-bs-parent=".accordion">
+                                    <div class="accordion-body">
+                                        Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-button collapsed" data-bs-target="#one-4" data-bs-toggle="collapse">Will I receive the same product that I see in the picture?</h2>
+                                <div id="one-4" class="accordion-collapse collapse" data-bs-parent=".accordion">
+                                    <div class="accordion-body">
+                                        Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-button collapsed" data-bs-target="#one-5" data-bs-toggle="collapse">Will I receive the same product that I see in the picture?</h2>
+                                <div id="one-5" class="accordion-collapse collapse" data-bs-parent=".accordion">
+                                    <div class="accordion-body">
+                                        Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <div class="contactpage-form-item">
+                    <div class="contactpage-form-header">
+                        <h2>Information About us</h2>
+                        <h1>Contact us for any questions</h1>
+                    </div>
+                    <div class="contactpage-form-main">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <input type="email" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="tel" placeholder="Phone number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="what's your maind"></textarea>
+                                <input type="submit" value="ASK A QUESTION">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- contact page ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-section">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-truck"></i>
+                    <p>FREE DELIVERY <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-newspaper"></i>
+                    <p>safe payment <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="far fa-envelope"></i>
+                    <p>messages <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>return money <span>For all orders over $120</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>download app</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur fugit necessitatibus temp.</p>
+                    <div class="footer-main-item-image">
+                        <img src="img/appstore.webp">
+                        <img src="img/playstore.webp">
+                    </div>
+                    <div class="footer-main-item-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>Help & Customer Care</h4>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">How to use My Account</a>
+                    <a href="#">Placing an Order</a>
+                    <a href="#">New Customers</a>
+                    <a href="#">Payment Methods</a>
+                </div>
+            </div>
+                <div class="col-lg-2 co-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>Customer Service</h4>
+                        <a href="#">Online Returns Policy</a>
+                        <a href="#">Policies & Rules</a>
+                        <a href="#">Submit a Dispute</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Customer Service</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>My Account</h4>
+                        <a href="#">Custom Link</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Product Support</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="footer-main-item">
+                        <h4>Sign Up To Newsletter</h4>
+                        <p>Join 60.000+ subscribers and get a new discount coupon
+                            on every Saturday.</p>
+                        <p>By providing your email address, you agree to our
+                            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ADVANCED SEARCH</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <img src="img/payment.webp">
+        <p>Copyright © Maruf Ahmed. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <!-- js file -->
+    <script src="assests/jquery-3.6.0.min.js"></script>
+    <script src="assests/owl.carousel.min.js"></script>
+    <script src="assests/bootstrap.min.js"></script>
+    <script src="min.js"></script>
+
+</body>
+</html>

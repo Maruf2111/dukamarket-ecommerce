@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>about page</title>
+    
+    <style>
+
+.aboutpage-section{
+    background-color: #F3F5F6;
+    padding: 50px 0;
+}
+.aboutpage-banner{
+    background-image: url(img/about-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+.aboutpage-banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.aboutpage-banner-content h2{
+    font-size: 40px;
+    color: #ffff;
+    text-transform: capitalize;
+}
+.aboutpage-banner-content-text p {
+    color: #fff;
+    padding-top: 20px;
+}
+button.about-banner-btn {
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #27d7f9;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+    margin: 10px;
+}
+button.about-banner-btn:hover {
+    color: gray;
+    background: #ffff;
+}
+.aboutpage-experience-item {
+    margin-top: 50px;
+}
+.aboutpage-experience-item h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.aboutpage-experience-item h2 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.aboutpage-experience-item h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.aboutpage-experience-item h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height: 35px;
+}
+.aboutpage-experience-item p {
+    padding-top: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-experience-item img {
+    width: 100%;
+}
+.aboutpage-work{
+    background-color: #F3F5F6;
+    padding: 50px 0;
+}
+.aboutpage-work-header{
+    text-align: center;
+}
+.aboutpage-work-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.aboutpage-work-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.aboutpage-work-header p {
+    padding-top: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-work-main-item {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+.aboutpage-work-main {
+    padding-top: 20px;
+}
+.aboutpage-work-main-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutpage-work-main-item-header img {
+    max-width: 100%;
+}
+.aboutpage-work-main-item p {
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-work-main-item{
+    margin-top: 30px;
+}
+.aboutpage-work-main-item-header p {
+    font-size: 60px;
+    margin: 0;
+    font-weight: 900;
+    color: #f3f5f6;
+}
+.aboutpage-work-main-item h2 {
+    font-size: 20px;
+    padding: 25px 0;
+}
+.aboutpage-creative{
+    padding: 50px 0;
+}
+.aboutpage-creative-header{
+    text-align: center;
+}
+.aboutpage-creative-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.aboutpage-creative-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.aboutpage-creative-header p {
+    padding-top: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-creative-main-item {
+    margin-top: 30px;
+}
+.aboutpage-creative-main-item-image img {
+    width: 100%;
+}
+.creative-content-item-image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.creative-content-item{
+    margin-top: 30px;
+}
+.creative-content-item img {
+    max-width: 100%;
+}
+span.creative-count {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+.creative-content-item h3 {
+    font-size: 20px;
+    padding: 15px 0;
+    margin: 0;
+}
+.creative-content-item p {
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-team{
+    background-color: #F3F5F6;
+    padding: 80px 0;
+}
+.aboutpage-team-header{
+    text-align: center;
+}
+.aboutpage-team-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.aboutpage-team-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.aboutpage-team-header p {
+    padding-top: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-team-main-item {
+    margin-top: 30px;
+    text-align: center;
+}
+.aboutpage-team-main-item img {
+    max-width: 100%;
+}
+.aboutpage-team-main-item h2 {
+    font-size: 16px;
+    padding-top: 20px;
+    color: black;
+}
+.aboutpage-team-main-item h4 {
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+}
+.aboutpage-team-main-item p {
+    padding: 15px 35px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-location {
+    padding: 50px 0;
+}
+.aboutpage-location-header{
+    text-align: center;
+}
+.aboutpage-location-header h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #16BCDC;
+}
+.aboutpage-location-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.aboutpage-location-header p {
+    padding-top: 15px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+.aboutpage-location-item {
+    margin-top: 30px;
+}
+.aboutpage-location-item-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+.aboutpage-location-item-content-header h2 {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin: 0;
+}
+.aboutpage-location-item-content-header {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E3E3E3;
+}
+.aboutpage-location-item-content p {
+    font-size: 15px;
+    color: gray;
+    margin: 0;
+    padding-top: 5px;
+}
+    </style>
+
+</head>
+<body>
+    
+<!-- side-navbar starts-->
+
+<div class="said-nav">
+    <h2 id="said-close-btn">close <i class="fa fa-times"></i></h2>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="about.html">about us</a></li>
+    </ul>
+</div>
+
+<!-- side-navbar ends-->
+
+<!-- car section starts -->
+
+<div class="cart-section">
+    <div class="cart-header">
+        <h1>cart</h1>
+        <i class="fa fa-times" id="cart-cross"></i>
+    </div>
+</div>
+
+<!-- car section ends -->
+
+<!-- header section starts -->
+
+<div class="header-section">
+<div class="header-top">
+    <div class="header-top-left">
+        <select name="" id="language">
+            <option value="bangla">bangla</option>
+            <option value="english">english</option>
+            <option value="arobic">arobic</option>
+        </select>
+        <select name="" id="currency">
+            <option value="dollar">dollar</option>
+            <option value="rial">rial</option>
+            <option value="euro">euro</option>
+            <option value="dinner">dinner</option>
+        </select>
+        <p>need help : <a href="#">+001 123 456 789</a></p>
+    </div>
+
+    <div class="header-top-right">
+        <a href="account.html">my account</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+
+<div class="header-main">
+    <i class="fa fa-bars" id="header-main-bar"></i>
+    <div class="header-logo">
+        <a href="index.html"><img src="img/logo.webp"></a>
+    </div>
+    <div class="header-search">
+        <select name="" id="all-categories">
+            <option value="all-categories">all-categories</option>
+            <option value="to-deal">to-deal</option>
+            <option value="top-featured-product">top-featured-product</option>
+            <option value="top-selling-product">top-selling-product</option>
+            <option value="computer-desktop">computer-desktop</option>
+        </select>
+        <input type="search" placeholder="search-here..">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="header-cart">
+        <i class="fa fa-search" id="searchbarIcon"></i>
+        <div class="header-cart-item">
+            <i class="far fa-user"></i>
+            <p>sing in <a href="account.html">creat an account</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="far fa-heart"></i>
+            <p>favorit <a href="#">my wish list</a></p>
+        </div>
+        <div class="header-cart-item">
+            <i class="fas fa-cart-arrow-down" id="cart-icon"></i>
+            <!-- <span class="cart-count">0</span> -->
+            <p>my cart <a href="#">$0.00</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+    <div class="header-bottom-categories">
+        <i class="fa fa-bars"></i>
+        <p>SHOP BY DEPARTMENT</p>
+    </div>
+    <div class="header-bottom-menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">about us</a></li>
+        </ul>
+    </div>
+    <div class="header-bottom-text">
+        <p>Spend $120 more and get free shipping!</p>
+    </div>
+</div>
+</div>
+
+<!-- header section ends -->
+
+<!-- shoppage banner starts -->
+
+<div class="aboutpage-banner">
+<div class="aboutpage-banner-content">
+    <div class="aboutpage-banner-content-text">
+        <h2>About Us</h2>
+        <p>A wonderful serenity has taken possession of my entire soul, like these <br>
+          sweet mornings of spring which I enjoy with my whole heart.</p>
+        <button class="about-banner-btn">view more</button>
+        <button class="about-banner-btn">see project</button>
+    </div>
+</div>
+</div>
+
+<!-- shoppage banner starts -->
+
+<!-- about page starts -->
+
+<div class="aboutpage-experience">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-12 col-12">
+                  <div class="aboutpage-experience-item">
+                      <h4>ABOUT OUR ONLINE STORE</h4>
+                      <h2>Hello,</h2>
+                      <h1>With 25+ Years Of Experience</h1>
+                      <h3>"Over 25 years Dukamarket helping companies reach their
+                        financial and branding goals.</h3>
+                        <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography. The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                  <div class="aboutpage-experience-item">
+                      <img src="img/about-img.png">
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+
+<div class="aboutpage-work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aboutpage-work-header">
+                    <h4>HOW IT WORKS</h4>
+                    <h1>Complete Customer Ideas</h1>
+                    <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit <br>
+                        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutpage-work-main">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-work-main-item">
+                        <div class="aboutpage-work-main-item-header">
+                            <img src="img/about-icon-1.png">
+                            <p>01</p>
+                        </div>
+                        <h2>Send The Solution</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam rem aperiam, eaqueipsa quae veritatis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-work-main-item">
+                        <div class="aboutpage-work-main-item-header">
+                            <img src="img/about-icon-2.png">
+                            <p>02</p>
+                        </div>
+                        <h2>Send The Solution</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam rem aperiam, eaqueipsa quae veritatis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-work-main-item">
+                        <div class="aboutpage-work-main-item-header">
+                            <img src="img/about-icon-3.png">
+                            <p>03</p>
+                        </div>
+                        <h2>Send The Solution</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam rem aperiam, eaqueipsa quae veritatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aboutpage-creative">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aboutpage-creative-header">
+                    <h4>TECHNOLOGY INDEX</h4>
+                <h1>Let’s Get Creative</h1>
+                <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit <br>
+                    in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutpage-creative-main">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="aboutpage-creative-main-item">
+                        <div class="aboutpage-creative-main-item-image">
+                            <img src="img/about-img-1.jpg">
+                        </div>
+                        <div class="aboutpage-creative-main-item-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="creative-content-item">
+                                        <div class="creative-content-item-image">
+                                            <img src="img/about-icon-4.png"> <span class="creative-count">8262+</span>
+                                        </div>
+                                        <h3>Active Clients</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium totam.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="creative-content-item">
+                                        <div class="creative-content-item-image">
+                                            <img src="img/about-icon-4.png"> <span class="creative-count">8262+</span>
+                                        </div>
+                                        <h3>Active Clients</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium totam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="aboutpage-creative-main-item">
+                        <div class="aboutpage-creative-main-item-image">
+                            <img src="img/about-img-2.jpg">
+                        </div>
+                        <div class="aboutpage-creative-main-item-content">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="creative-content-item">
+                                        <div class="creative-content-item-image">
+                                            <img src="img/about-icon-4.png"> <span class="creative-count">8262+</span>
+                                        </div>
+                                        <h3>Active Clients</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium totam.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="creative-content-item">
+                                        <div class="creative-content-item-image">
+                                            <img src="img/about-icon-4.png"> <span class="creative-count">8262+</span>
+                                        </div>
+                                        <h3>Active Clients</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium totam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aboutpage-team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aboutpage-team-header">
+                    <h4>THE TEAM</h4>
+                    <h1>Meet Our Team</h1>
+                    <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit <br>
+                        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutpage-team-main">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="aboutpage-team-main-item">
+                        <img src="img/about-team-1.png">
+                        <h2>JOHN DOE</h2>
+                        <h4>CEO & Founder</h4>
+                        <p>Sed ut perspiciatis unde omnis iste
+                            natus error sitaccusantium doloremque laudan
+                            totam rem aperiam.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="aboutpage-team-main-item">
+                        <img src="img/about-team-2.png">
+                        <h2>YOUNGLY</h2>
+                        <h4>CEO & Founder</h4>
+                        <p>Sed ut perspiciatis unde omnis iste
+                            natus error sitaccusantium doloremque laudan
+                            totam rem aperiam.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="aboutpage-team-main-item">
+                        <img src="img/about-team-3.png">
+                        <h2>ERENTEAM</h2>
+                        <h4>CEO & Founder</h4>
+                        <p>Sed ut perspiciatis unde omnis iste
+                            natus error sitaccusantium doloremque laudan
+                            totam rem aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aboutpage-location">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aboutpage-location-header">
+                    <h4>LOCATION STORE</h4>
+                    <h1>Where We Are</h1>
+                    <p>The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit <br>
+                        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutpage-location-main">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-location-item">
+                        <div class="aboutpage-location-item-image">
+                            <img src="img/contact-1.jpg">
+                        </div>
+                        <div class="aboutpage-location-item-content">
+                            <div class="aboutpage-location-item-content-header">
+                                <h2>92 Rue Pelleport - Paris</h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-location-item">
+                        <div class="aboutpage-location-item-image">
+                            <img src="img/contact-2.jpg">
+                        </div>
+                        <div class="aboutpage-location-item-content">
+                            <div class="aboutpage-location-item-content-header">
+                                <h2>92 Rue Pelleport - Paris</h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-location-item">
+                        <div class="aboutpage-location-item-image">
+                            <img src="img/contact-3.jpg">
+                        </div>
+                        <div class="aboutpage-location-item-content">
+                            <div class="aboutpage-location-item-content-header">
+                                <h2>92 Rue Pelleport - Paris</h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="aboutpage-location-item">
+                        <div class="aboutpage-location-item-image">
+                            <img src="img/contact-4.jpg">
+                        </div>
+                        <div class="aboutpage-location-item-content">
+                            <div class="aboutpage-location-item-content-header">
+                                <h2>92 Rue Pelleport - Paris</h2>
+                            </div>
+                            <p>Add: s9 heaven stress beverly hill, USA.</p>
+                            <p>+4(800)453 23454 544</p>
+                            <p>contact@theme.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about page ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-section">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-truck"></i>
+                    <p>FREE DELIVERY <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-newspaper"></i>
+                    <p>safe payment <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="far fa-envelope"></i>
+                    <p>messages <span>For all orders over $120</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-top-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>return money <span>For all orders over $120</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>download app</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur fugit necessitatibus temp.</p>
+                    <div class="footer-main-item-image">
+                        <img src="img/appstore.webp">
+                        <img src="img/playstore.webp">
+                    </div>
+                    <div class="footer-main-item-icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                <div class="footer-main-item">
+                    <h4>Help & Customer Care</h4>
+                    <a href="#">Payment Methods</a>
+                    <a href="#">How to use My Account</a>
+                    <a href="#">Placing an Order</a>
+                    <a href="#">New Customers</a>
+                    <a href="#">Payment Methods</a>
+                </div>
+            </div>
+                <div class="col-lg-2 co-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>Customer Service</h4>
+                        <a href="#">Online Returns Policy</a>
+                        <a href="#">Policies & Rules</a>
+                        <a href="#">Submit a Dispute</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Customer Service</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                    <div class="footer-main-item">
+                        <h4>My Account</h4>
+                        <a href="#">Custom Link</a>
+                        <a href="#">Wishlist</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Product Support</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="footer-main-item">
+                        <h4>Sign Up To Newsletter</h4>
+                        <p>Join 60.000+ subscribers and get a new discount coupon
+                            on every Saturday.</p>
+                        <p>By providing your email address, you agree to our
+                            <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ADVANCED SEARCH</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <img src="img/payment.webp">
+        <p>Copyright © Maruf Ahmed. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <!-- js file -->
+    <script src="assests/jquery-3.6.0.min.js"></script>
+    <script src="assests/owl.carousel.min.js"></script>
+    <script src="assests/bootstrap.min.js"></script>
+    <script src="min.js"></script>
+
+</body>
+</html>
